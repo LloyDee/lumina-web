@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="#{title}">Lumina Judicial</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav th:replace="~{fragments :: navbar(activePage='home')}"></nav>
+
+    <header class="hero-section">
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4 text-gradient">Company Overview</h3>
+                    <p class="lead text-dark">Professional English-Spanish interpretation, translation, transcription, and certified translation services for legal, governmental, educational, medical-legal, and professional clients throughout the United States.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4 text-gradient">Our Mission</h3>
+                    <p class="lead text-dark">Language should never be a barrier to understanding, participation, or access. We provide accurate and culturally competent language services that allow LEP individuals to participate fully and confidently in critical settings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section py-5 bg-light border-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5">
+                        <span class="text-uppercase tracking-wider text-muted mb-2 d-block small fw-bold">Our Standards</span>
+                        <h2 class="display-5 fw-bold"><span class="text-gradient">Professional Excellence</span></h2>
+                        <p class="lead text-muted">Dedicated to the highest level of judicial support services.</p>
+                    </div>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6">
+                            <div class="feature-card shadow-sm rounded-4 p-4 bg-white border-gold h-100">
+                                <div class="icon-circle bg-gold-light text-gold-dark mb-4 mx-auto">
+                                    <i class="bi bi-award-fill fs-1"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="fw-bold mb-3">Legal Precision</h4>
+                                    <p class="text-muted">Meticulous attention to detail in every translation and interpretation, ensuring absolute accuracy for judicial proceedings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-card shadow-sm rounded-4 p-4 bg-white border-gold h-100">
+                                <div class="icon-circle bg-gold-light text-gold-dark mb-4 mx-auto">
+                                    <i class="bi bi-shield-check-fill fs-1"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h4 class="fw-bold mb-3">Certified Professionals</h4>
+                                    <p class="text-muted">Our team consists of state and federal certified experts with years of experience in the legal and judicial fields.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">What <span class="text-gradient">Sets Us Apart</span></h2>
+                    <p class="lead text-muted mb-4">We understand that in legal proceedings, every word matters. Our team is dedicated to providing the highest quality linguistic support.</p>
+                    
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-4">
+                            <div class="bg-gold-light p-2 rounded-circle me-3 flex-shrink-0" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-award text-gold-dark fw-bold"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Tri-State Certified Interpreters</h5>
+                                <p class="text-muted small">Our interpreters hold state and federal certifications, including Texas, California, and Florida.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <div class="bg-gold-light p-2 rounded-circle me-3 flex-shrink-0" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-clock-history text-gold-dark fw-bold"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Over 10 Years of Experience</h5>
+                                <p class="text-muted small">A decade of specialized experience in legal, educational, and medical-legal settings.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <div class="bg-gold-light p-2 rounded-circle me-3 flex-shrink-0" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-broadcast text-gold-dark fw-bold"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Nationwide Remote Service</h5>
+                                <p class="text-muted small">Equipped with the latest technology for remote interpretation (VRI & OPI) across the country.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <div class="bg-gold-light p-2 rounded-circle me-3 flex-shrink-0" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i class="bi bi-shield-lock text-gold-dark fw-bold"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Confidentiality & Accuracy</h5>
+                                <p class="text-muted small">Unwavering commitment to the highest standards of confidentiality and linguistic precision.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="card shadow-sm border-0 rounded-4 p-4 mb-4 testimonial-card">
+                                <div class="d-flex mb-3">
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p class="fst-italic text-muted">"The level of precision in their legal translations is unmatched. We've used Lumina for several high-stakes court cases, and they have never let us down."</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-blue text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-size: 0.9rem;">
+                                        <span class="fw-bold">JS</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Lloyd Jayson Pintac</h6>
+                                        <small class="text-muted">Software Engineer</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card shadow-sm border-0 rounded-4 p-4 testimonial-card">
+                                <div class="d-flex mb-3">
+                                    <div class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p class="fst-italic text-muted">"Professional, punctual, and highly skilled. Their court interpreters made a complex deposition run smoothly for all parties involved. Highly recommend!"</p>
+                                <div class="d-flex align-items-center">
+                                    <div class="bg-blue text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 45px; height: 45px; font-size: 0.9rem;">
+                                        <span class="fw-bold">MR</span>
+                                    </div>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">AutoMatech LLC</h6>
+                                        <small class="text-muted">IT Company</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="container my-5">
+        <div class="row g-4 py-5 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-file-earmark-text display-4 text-primary"></i>
+                    </div>
+                    <h3>Legal Translation</h3>
+                    <p>Accurate translation of legal documents, contracts, and court records by certified professionals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-people display-4 text-primary"></i>
+                    </div>
+                    <h3>Court Interpretation</h3>
+                    <p>Real-time interpretation for hearings, depositions, and legal consultations in multiple languages.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-shield-check display-4 text-primary"></i>
+                    </div>
+                    <h3>Certified Quality</h3>
+                    <p>Ensuring the highest standards of accuracy and confidentiality in every legal proceeding.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto">
+        <div class="container text-center">
+            <div class="mb-4">
+                <a href="#" class="text-white me-4 fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-4 fs-4"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-white me-4 fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p>&copy; 2026 Lumina Judicial. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="#{title}">Lumina Judicial</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav th:replace="~{fragments :: navbar(activePage='about')}"></nav>
+
+    <main class="container my-5 py-5">
+        <!-- Profile & Header Section -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <div class="position-relative d-inline-block">
+                    <img th:src="@{/images/user.png}" alt="Edith Pintac" class="img-fluid rounded-circle profile-img-circle mb-3">
+                    <div class="position-absolute bottom-0 end-0 bg-white p-2 shadow-sm rounded-circle border-gold" style="transform: translate(10%, -10%);">
+                        <i class="bi bi-patch-check-fill text-primary h4 mb-0"></i>
+                    </div>
+                </div>
+                <h2 class="fw-bold mb-0">Edith Pintac</h2>
+                <p class="text-gold-dark fw-bold text-uppercase small tracking-wider">Founder & Owner</p>
+                <div class="d-flex justify-content-center gap-2 mt-2">
+                    <a href="mailto:edith@luminajudicial.com" class="btn btn-outline-dark btn-sm" title="Email"><i class="bi bi-envelope"></i></a>
+                    <a href="tel:+19562122242" class="btn btn-outline-dark btn-sm" title="Call"><i class="bi bi-telephone"></i></a>
+                    <a th:href="@{/images/resume.png}" class="btn btn-outline-dark btn-sm" target="_blank" title="View Resume"><i class="bi bi-file-earmark-person"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <span class="text-uppercase tracking-wider text-muted mb-2 d-block small fw-bold">Professional Excellence</span>
+                <h1 class="display-4 fw-bold mb-4">
+                    <span class="text-gradient">About Lumina Judicial</span>
+                </h1>
+                <p class="lead text-dark mb-4">Spanish language professional with over 10 years of experience providing interpretation, translation, transcription, and language-access services in legal, immigration, educational, medical-legal, and investigative settings.</p>
+                <div class="about-feature-box">
+                    <p class="mb-0 text-muted fst-italic">"Delivering accurate and culturally competent language solutions throughout the United States, preserving meaning, context, tone, and speaker intent."</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5 opacity-10">
+
+        <!-- Credentials & Summary -->
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-4"><i class="bi bi-award text-gold-dark me-2"></i>Credentials</h3>
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-light h-100">
+                    <ul class="list-unstyled mb-0">
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-gold-dark me-3 mt-1"></i>
+                            <span>Texas Master Licensed Court Interpreter (LCI #2451)</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-gold-dark me-3 mt-1"></i>
+                            <span>California Certified Court Interpreter (#510607)</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-gold-dark me-3 mt-1"></i>
+                            <span>Florida Certified Court Interpreter (#22-00599 SPA)</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-gold-dark me-3 mt-1"></i>
+                            <span>Federal Interpreting Program Certificate</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="bi bi-check-circle-fill text-gold-dark me-3 mt-1"></i>
+                            <span>EOIR Immigration Interpreting Program Certificate</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-4"><i class="bi bi-translate text-gold-dark me-2"></i>Language Services</h3>
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-light h-100">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2">• Interpretation</li>
+                                <li class="mb-2">• Translation</li>
+                                <li class="mb-2">• Certified Translation</li>
+                                <li class="mb-2">• Audio & Video Transcription</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2">• Court Hearings</li>
+                                <li class="mb-2">• Depositions</li>
+                                <li class="mb-2">• Immigration Proceedings</li>
+                                <li class="mb-2">• Remote Interpretation (VRI & OPI)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-3 pt-3 border-top">
+                        <p class="small text-muted mb-0"><strong>Languages:</strong> English (Native/Bilingual), Spanish (Native/Bilingual), Tagalog (Conversational)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clients & Organizations -->
+        <div class="row mt-5 pt-4">
+            <div class="col-12">
+                <h3 class="fw-bold mb-4"><i class="bi bi-people text-gold-dark me-2"></i>Representative Clients & Organizations</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="h-100 p-4 rounded-4 border">
+                            <h5 class="fw-bold mb-3">Court Reporting</h5>
+                            <ul class="list-unstyled small text-muted mb-0">
+                                <li class="mb-2">Magna Legal Services</li>
+                                <li class="mb-2">Eterpreting • Steno</li>
+                                <li>Judicial Services Court Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 p-4 rounded-4 border">
+                            <h5 class="fw-bold mb-3">Governmental Entities</h5>
+                            <ul class="list-unstyled small text-muted mb-0">
+                                <li class="mb-2">U.S. Department of Justice (EOIR)</li>
+                                <li class="mb-2">Hidalgo County District Court</li>
+                                <li>Social Security Administration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 p-4 rounded-4 border">
+                            <h5 class="fw-bold mb-3">Law Firms</h5>
+                            <ul class="list-unstyled small text-muted mb-0">
+                                <li class="mb-2">Creemens Law Group</li>
+                                <li class="mb-2">The Davis Law Firm</li>
+                                <li>Private-sector clients nationwide</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subject Matter Expertise -->
+        <div class="row mt-5 pt-4">
+            <div class="col-12">
+                <h3 class="fw-bold mb-4"><i class="bi bi-briefcase text-gold-dark me-2"></i>Subject Matter Expertise</h3>
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Criminal Law</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Civil Litigation</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Immigration Law</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Depositions</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Personal Injury</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Workers' Compensation</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">IMEs</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">EUOs</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Educational Mediations</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">ARD Meetings</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">IEP Meetings</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Parent Conferences</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">School Disciplinary Proceedings</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">CPS Proceedings</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Foster Care Matters</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Child Welfare Investigations</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Police Reports</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Witness Statements</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Body-Worn Camera Recordings</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Investigative Interviews</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Undercover Operations</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Evidentiary Audio & Video Recordings</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Medical-Legal Documentation</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Remote Patient Monitoring</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Cosmetology & Beauty Industry Terminology</span>
+                        <span class="badge bg-gold text-bg-light px-3 py-2 rounded-pill">Religious & Biblical Terminology</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 py-4">
+            <h4 class="fw-bold mb-4">Ready to work with a certified professional?</h4>
+            <div class="d-flex justify-content-center gap-3">
+                <a th:href="@{/schedule}" class="btn btn-gold btn-lg px-5">Schedule Now</a>
+                <a th:href="@{/contact}" class="btn btn-outline-dark btn-lg px-5">Contact Us</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto">
+        <div class="container text-center">
+            <p>&copy; 2026 Lumina Judicial. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

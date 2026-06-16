@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Judicial - Appointment Scheduled</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <main class="container my-auto">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <div class="card shadow p-5 border-0 rounded-4">
+                    <div class="mb-4">
+                        <i class="bi bi-calendar-check-fill display-1 text-primary"></i>
+                    </div>
+                    <h1 class="fw-bold mb-3">Appointment Scheduled!</h1>
+                    <p class="lead text-muted mb-4">Thank you. Your appointment has been requested and we will confirm it shortly.</p>
+                    <a href="/" class="btn btn-primary btn-lg rounded-pill px-5 shadow">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="text-muted small mb-0">&copy; 2026 Lumina Judicial. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
